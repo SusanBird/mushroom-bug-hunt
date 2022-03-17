@@ -7,9 +7,13 @@ export function addFriend(friends, name) {
     friends.push(newFriend);
 }
 
-export default function findFriendByName(name, friends) {
-    for (friend of friends) {
-        if (friend.name = name) {
+
+//should be an array?
+
+export default function findFriendByName(name, friend) {
+
+    for (friend of friendData) {
+        if (friend.name === name) {
             return friend;
         }
     }
